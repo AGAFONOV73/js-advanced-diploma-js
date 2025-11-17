@@ -1,13 +1,13 @@
-import Character from './Character';
+
 
 export default class PositionedCharacter {
   constructor(character, position) {
-    if (!(character instanceof Character)) {
-      throw new Error('character must be instance of Character or its children');
+    if (!character) {
+      throw new Error('character must be specified');
     }
-
-    if (typeof position !== 'number') {
-      throw new Error('position must be a number');
+    
+    if (typeof position !== 'number' || position < 0) {
+      throw new Error('position must be a non-negative number');
     }
 
     this.character = character;

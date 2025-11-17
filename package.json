@@ -1,0 +1,44 @@
+{
+  "name": "js-advanced-diploma",
+  "version": "1.0.0",
+  "description": "Вы неплохо овладели не только продвинутыми возможностями JS, но и инфраструктурными инструментами. Вам поручили первый проект: разработать небольшую пошаговую игру.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "lint": "eslint src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGAFONOV73/js-advanced-diploma-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AGAFONOV73/js-advanced-diploma-js/issues"
+  },
+  "homepage": "https://github.com/AGAFONOV73/js-advanced-diploma-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/eslint-parser": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@eslint/js": "^9.39.1",
+    "@types/jest": "^30.0.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.39.1",
+    "file-loader": "^6.2.0",
+    "globals": "^16.5.0",
+    "html-webpack-plugin": "^5.6.4",
+    "jest": "^30.2.0",
+    "style-loader": "^4.0.0",
+    "ts-jest": "^29.4.5",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
